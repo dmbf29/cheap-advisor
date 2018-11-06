@@ -18,7 +18,7 @@ Rails.application.routes.draw do
 
   # Update (2 requests)
   get 'restaurants/:id/edit', to: 'restaurants#edit'
-  patch 'restaurants/:id/update', to: 'restaurants#update'
+  patch 'restaurants/:id', to: 'restaurants#update'
 
   # Destroy
   delete 'restaurants/:id', to: 'restaurants#destoy'
