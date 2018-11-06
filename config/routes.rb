@@ -9,12 +9,13 @@ Rails.application.routes.draw do
   # Read
   get 'restaurants', to: 'restaurants#index'
 
-  # params[:id] = number
-  get 'restaurants/:id', to: 'restaurants#show'
-
   # Create (2 requests)
   get 'restaurants/new', to: 'restaurants#new'
   post 'restaurants', to: 'restaurants#create'
+
+  # params[:id] = number
+  get 'restaurants/:id', to: 'restaurants#show'
+
 
   # Update (2 requests)
   get 'restaurants/:id/edit', to: 'restaurants#edit'
